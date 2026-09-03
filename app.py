@@ -344,7 +344,7 @@ Write a concise academic interpretation. State clearly that ANN produced
 the numerical predictions and Gemini only provides interpretation."""
                     client = genai.Client(api_key=key)
                     response = client.models.generate_content(
-                        model="gemini-2.5-flash",
+                        model="gemini-3.5-flash",
                         contents=prompt,
                     )
                     st.session_state.gemini_text = response.text
